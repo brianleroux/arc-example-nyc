@@ -1,0 +1,26 @@
+{
+  "name": "test-cov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*-test.js | tap-spec",
+    "cov": "nyc npm t"
+  },
+  "keywords": [],
+  "author": "Brian LeRoux <b@brian.io>",
+  "license": "Apache-2.0",
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "@architect/architect": "^5.6.3",
+    "nyc": "^13.3.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.1",
+    "tiny-json-http": "^7.1.2"
+  }
+}
