@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*-test.js | tap-spec",
-    "cov": "nyc npm t"
+    "tests": "tape test/*-test.js | tap-spec",
+    "test": "nyc npm run tests"
   },
   "keywords": [],
   "author": "Brian LeRoux <b@brian.io>",
