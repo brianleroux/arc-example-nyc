@@ -1,6 +1,6 @@
-var test = require('tape')
-var tiny = require('tiny-json-http')
-var arc = require('@architect/architect')
+let test = require('tape')
+let tiny = require('tiny-json-http')
+let sandbox = require('@architect/sandbox')
 
 test('env', t=> {
   t.plan(1)
@@ -10,7 +10,7 @@ test('env', t=> {
 let close
 test('arc.sandbox.start', async t=> {
   t.plan(1)
-  close = await arc.sandbox.start()
+  close = await sandbox.start()
   t.ok(true, 'http server started on http://localhost:3333')
 })
 

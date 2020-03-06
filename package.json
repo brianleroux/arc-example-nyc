@@ -17,7 +17,7 @@
     ]
   },
   "dependencies": {
-    "@architect/architect": "^5.6.3",
+    "@architect/sandbox": "latest",
     "nyc": "^13.3.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1",
